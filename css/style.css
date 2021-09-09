@@ -1,0 +1,20 @@
+body{
+    background-color:ghostwhite;
+}
+
+.map{
+    width: 65%;
+    margin: auto;
+}
+
+.map path{
+    fill:yellowgreen;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+path{
+    fill:none;
+    stroke:black;
+    pointer-events:all;
+}
