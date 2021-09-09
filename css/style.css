@@ -3,14 +3,16 @@ body{
 }
 
 .map{
-    width: 65%;
+    width: 50%;
     margin: auto;
 }
 
 .map path{
-    fill:yellowgreen;
-    stroke: black;
-    stroke-width: 2px;
+    fill: yellowgreen;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:5;
 }
 
 path{
@@ -18,3 +20,20 @@ path{
     stroke:black;
     pointer-events:all;
 }
+body {  
+    background-color: ghostwhite;
+  }
+  
+
+  .mapa_sv_select
+  {
+    transition: all 0.25s ease-out;
+    transform-origin: 50% 50%;
+  }
+  
+  
+
+  .mapa_sv_select:hover {
+    transform: scale(1.1);
+  }
+  
