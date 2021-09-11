@@ -10,7 +10,7 @@ body{
 .map path{
     fill: yellowgreen;
     fill-opacity: 1;
-    stroke:white;
+    stroke:black;
     stroke-opacity: 1;
     stroke-width:5;
 }
@@ -28,9 +28,7 @@ path{
     transform-origin: 50% 50%;
   }
   
-  
-
-.mapa_sv_select:hover {
+  .mapa_sv_select:hover {
     transform: scale(1.1);
   }
   
@@ -79,3 +77,4 @@ path{
     stroke-opacity: 1;
     stroke-width:5;
 }
+
