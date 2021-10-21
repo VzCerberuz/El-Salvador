@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('fondo.jpg');
+  }
+  
+  .formulariore {
+    width: 400px;
+    background: #78c2ad;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+
+  
+  .formulariore h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+  }
+  
+  textarea{
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #000000;
+      font-size: 18px;
+      color: black;
+  }
+
+  
+  .formulariore a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .formulariore a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .formulariore .botons {
+    width: 100%;
+    background: #747577;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
