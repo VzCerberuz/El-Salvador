@@ -1,16 +1,16 @@
 function validar(){
+//validador de campos para saber que no estan vacios
     var formulario = document.form;
-
     if(form.nombre.value==0){
         alert("El campo Nombre esta vacio");
         form.nombre.value="";
         form.nombre.focus();
         return false;
     }
-    if(form.telefono.value==0){
-        alert("El campo Telefono esta vacio");
-        form.telefono.value="";
-        form.telefono.focus();
+    if(form.pais.value==0){
+        alert("El campo Pais esta vacio");
+        form.pais.value="";
+        form.pais.focus();
         return false;
     }
     if(form.correo.value==0){
@@ -26,4 +26,14 @@ function validar(){
         return false;
     }
 
+}
+//validador de correo electronico
+function correoval(correo){
+    var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var valides= expReg.test(correo);
+    if(valides==true){
+    }
+    else{
+        alert("El correo no es valido");
+    }
 }

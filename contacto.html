@@ -44,12 +44,12 @@
 
 <section class="formulariore">
   <h4>Formulario</h4>
-  <form name="form" action="#" method="post">
-    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
-    <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su # Telefonico">
-    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+  <form name="form">
+    <input class="controls" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+    <input class="controls" name="pais" id="pais" placeholder="Ingrese su Pais">
+    <input class="controls"  name="correo" id="correo" placeholder="Ingrese su correo">
     <textarea class="controles" name="mensaje" id="texto" placeholder="Ingrese el mensaje deseado"></textarea>
-    <button onclick="validar();"type="submit" class="botons">Enviar</button>
+    <button onclick="validar();  onclick=correoval(form.correo.value); "type="submit" class="botons">Enviar</button>
     </form>
     </section>
 
