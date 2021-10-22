@@ -1,7 +1,11 @@
 body{
     background-color:ghostwhite;
 }
-
+label{
+margin-left: 20px;
+color: white;
+font-size: 30px;
+}
 .map{
     width: 50%;
     margin: auto;

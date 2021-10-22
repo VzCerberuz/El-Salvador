@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
-   
-    <title>Departamento de Ahuachapan</title>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/menup.css">
+  <script src="js/menu.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../Inicio.html">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/QS.html">¿Quienes Somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Departamentos</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../zonaoriental.html">Zona Oriental</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../zonacentral.html">Zona Central</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../zonaoccidental.html">Zona Occidental</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav id="menu" class="menu">
+    <label >El Salvador</label>
+      <ul class="menu_items" id="otroModo">
+          <li class="active"><a href="Inicio.html">El Salvador</a></li>
+          <li><a href="QS.html">¿Quienes Somos?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#" >Departamentos</a>
+              <ul>
+                  <li><a href="zonaoriental.html">Zona Oriental</a></li>
+                  <li><a href="zonacentral.html">Zona Central</a></li>
+                  <li><a href="zonaoccidental.html">Zona Occidental</a></li>
+              </ul>
+          </li>
+      </ul>
+      <span class="icon-menu" id="btn_menu" onclick="showmenu()">
+      </span>
+  </nav>
     <div class="container mt-4">
         <div class="row">
             <div class="col-12 shadow-lg p-3 mb-4 rounded">
