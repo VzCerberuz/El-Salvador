@@ -3,13 +3,14 @@
     color: black; 
     font-size: 18px;  
     background: #f1f1f1; 
-    margin: 50px; 
+    margin: 75px; 
     padding: 100px;
     overflow: hidden; 
     border-radius: 35px 0px 35px 0px; 
     -moz-border-radius: 35px 0px 35px 0px; 
     -webkit-border-radius: 35px 0px 35px 0px; 
     border: 2px solid #5878ca;
+    text-align: center;
     }
     
     h3{
@@ -26,4 +27,12 @@
         text-align: center;
       }
 
-    
+    .imagencontacto{
+        width: 700px;
+        height: 170px;
+    }
+
+    .card-link{
+        color: black;
+    }
+
