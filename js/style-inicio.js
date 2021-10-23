@@ -1,4 +1,10 @@
-
+/*
+***************************************************************************************
+******************************* UTILIZANDO OBJETOS JSON *******************************
+***************************************************************************************
+*/
+//se declara un objeto json para almacenar la información
+// y se agrega la informacion a mostrar en la pagina de inicio
 var Pelis = {
     "Peliculas": [
     {"General": "El Salvador, oficialmente República de El Salvador, es un país soberano de América Central ubicado en el litoral del océano Pacífico con una extensión territorial de 21 041 km²",
@@ -9,12 +15,19 @@ var Pelis = {
 },
 ]};
 
-
+    //se inicializa una variable y le al macenamos el id del DIV informacion que se encuentra en la pagina inicio
    var div = document.getElementById("informacion");
+   // le agregamos a la variable el objeto a proyectar
+   // y le asignamos los nombre de el objeto JSON declarado anteriormente
    div.innerHTML = CineDatos(Pelis.Peliculas);
+   //declaramos la funcion y le asiganamos una variable la cual nos servira para asiganr los valores 
    function CineDatos(datos){
+    //declaramos un variable para utilizar la en dado caso que aya más objetos y se repita tantas veces 
+    // objetos esten 
     var total = datos.length;
+    //declaramos las etiquetas HTML
     data = "<ul class=\"grid\">\n";
+    //El ciclo for por si hay mas objetos JSON para que se puedan mostrar los que ayan
     for(var i=0; i<total; i++){
 
     data += "<div class=\"unido\">\n";
@@ -23,6 +36,7 @@ var Pelis = {
     data += "</div>\n";
     data += "<div class=\"box-movie-format\">\n";
     data +="<h2>Informacion General</h2>";
+    //Asignamos los datos de el objeto JSON para mostrar los en el DIV y asi con todos los datos
     data += "<p>" + datos[i].General +"</p>";
     data += "<div>\n";
     data += "<div>\n";
@@ -46,4 +60,5 @@ var Pelis = {
     }
     data += "</ul>\n";
     return data;
+    //retornamos el data que va a contener toda la informacion que se pressentara en el DIV de inicio(HTML)
    }
