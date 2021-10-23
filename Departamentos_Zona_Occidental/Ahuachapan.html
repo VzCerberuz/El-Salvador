@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UFT-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <title>Menu</title>
-  <link rel="stylesheet" href="../css/menup.css">
-  <script src="../js/menu.js" defer></script>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../style2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</head>
-<body>
-  <span class="nav-bar" id="btnmenu"><i class="fas fa-align-justify"></i>Menu</span> 
-  <nav class="main-nav">
-      <ul class="menu" id="menu">
-          <li class="menu__item"><a href="../Inicio.html" class="menu__link">Inicio</a></li>
-          <li class="menu__item"><a href="../QS.html" class="menu__link">¿Quienes Somos?</a></li>
-          <li class="menu__item container-submenu">
-              <a href="#" class="menu__link submenu-btn">Departamentos <i class="fas fa-sort-amount-down-alt"></i></a>
-              <ul class="submenu">
-                  <li class="menu__item"><a href="../zonaoriental.html" class="menu__link">Zona Oriental</a></li>
-                  <li class="menu__item"><a href="../zonacentral.html" class="menu__link">Zona Central</a></li>
-                  <li class="menu__item"><a href="../zonaoccidental.html" class="menu__link">Zona Occidental</a></li>
-              </ul>
-          </li>
-          <li class="menu__item"><a href="../contacto.html" class="menu__link">Contacto</a></li>
-      </ul>
-  </nav>
-  <script src="../js/menu.js"></script> 
-    <div class="container mt-4">
+<html lang="ES">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="../css/menup.css">
+        <script src="../js/menu.js" defer></script>
+        <link rel="stylesheet" href="../style2.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/menu.js"></script>
+        <link rel="stylesheet" href="../css/departamentos.css">
+
+
+    </head>
+    <body>
+        <nav id="menu" class="menu">
+            <label>El Salvador</label>
+            <ul class="menu_items" id="otroModo">
+                <li class="active"><a href="../Inicio.html">El Salvador</a></li>
+                <li><a href="../QS.html">¿Quienes Somos?</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+                <li><a href="#" >Departamentos</a>
+                    <ul>
+                        <li><a href="../zonaoriental.html">Zona Oriental</a></li>
+                        <li><a href="../zonacentral.html">Zona Central</a></li>
+                        <li><a href="../zonaoccidental.html">Zona Occidental</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="icon-menu" id="btn_menu" onclick="showmenu()">
+            </span>
+        </nav>
+        <div class="Contenedor_todo" id="Contenedor_todo">
         <div class="row">
             <div class="col-12 shadow-lg p-3 mb-4 rounded">
                 <h3 class="text-center mt-5 mb-5">Departamento de Ahuachapan</h3>
@@ -115,10 +118,10 @@
 
 
 </body>
-<footer>
-    <div style="background-color: #78C2AD;">
+<footer class="footer">
+    <div>
       © 2021 Copyright:
-      <a class="text-white" href="http://www.udb.edu.sv/udb/">Universidad Don Bosco 2021</a>
+      <a href="http://www.udb.edu.sv/udb/">Universidad Don Bosco 2021</a>
     </div>
   </footer>
 </html>

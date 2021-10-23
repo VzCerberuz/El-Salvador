@@ -1,26 +1,12 @@
-const btnmenu = document.querySelector("#btnmenu");
-const menu = document.querySelector("#menu");
-btnmenu.addEventListener("click", function(){
-    menu.classList.toggle("mostrar");    
-});
-
-const subMenuBtn = document.querySelectorAll(".submenu-btn");
-for(let i=0; i<subMenuBtn.length; i++){
-    subMenuBtn[i].addEventListener("click", function(){
-        if(window.innerWidth < 1024){
-            const subMenu = this.nextElementSibling;
-            const height = subMenu.scrollHeight;
-
-            if(subMenu.classList.contains("desplegar")){
-            subMenu.classList.remove("desplegar");
-            subMenu.removeAttribute("style");
-            }
-            else{
-                subMenu.classList.add("desplegar");
-                subMenu.style.height = height + "px";
-            }
-
-            
-        }
-    });
-}
+addEventListener('DOMContentLoaded', () => {
+    const btn_menu = document.querySelector('.btn_menu')
+    if(btn_menu) {
+        btn_menu.addEventListener('click', () => {
+            const menu_items = document.querySelector('.menu_items')
+            menu_items.classList.toggle('show')
+        })
+    }
+})
+function showmenu() {
+    document.getElementById("otroModo").classList.toggle("show");
+  }
