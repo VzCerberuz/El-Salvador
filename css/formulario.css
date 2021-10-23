@@ -69,3 +69,21 @@
     margin: 16px 0;
     font-size: 16px;
   }
+  @media screen and (max-width: 1024px) {
+    .formulariore {
+      width:300px;
+ 
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 858px) {
+  
+  
+  }
+  
+  @media screen and (max-width: 858px) and (orientation: landscape) {
+  
+      
+  }

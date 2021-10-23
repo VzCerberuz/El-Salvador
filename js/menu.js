@@ -1,3 +1,5 @@
+//con esto guardamos los menus en el btn al momento al dar click se mostrara con 
+//el siguiente function
 addEventListener('DOMContentLoaded', () => {
     const btn_menu = document.querySelector('.btn_menu')
     if(btn_menu) {
@@ -7,6 +9,7 @@ addEventListener('DOMContentLoaded', () => {
         })
     }
 })
+//funcion que al dar click mostrata lo guardado en este caso el menu
 function showmenu() {
     document.getElementById("otroModo").classList.toggle("show");
   }

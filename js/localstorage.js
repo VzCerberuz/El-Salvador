@@ -1,5 +1,6 @@
 var myArrayObject = [];
 var divState;
+//verifica el navegador
 function init() {
  console.log("Carga de la página finalizada.");
  if(typeof(Storage) == "undefined") {
@@ -18,12 +19,12 @@ function init() {
  }
 }
 function save() {
+    //guarda los datos del formulario en el localstorage
     var nombrem = document.getElementById("nombre");
     var paism = document.getElementById("pais");
     var correom = document.getElementById("correo");
     var mensajem = document.getElementById("mensaje");
     var msg;
-    //Verificar si se puede utilizar localStorage en el navegador
     try {
     localStorage.setItem("nombre", nombrem.value);
     localStorage.setItem("pais", paism.value);
@@ -48,7 +49,7 @@ function save() {
     }
     }
    }
-
+//remueve los datos del localstorage
 function remove() {
  console.log("Removiendo dato del localStorage.");
  localStorage.removeItem("nombre");
